@@ -9,7 +9,7 @@ from langchain.document_loaders import UnstructuredURLLoader
 from langchain.embeddings import SentenceTransformerEmbeddings
 from langchain.vectorstores import FAISS
 
-from myAPI import api_key
+from myAPI import api_key #use your api_key
 
 FILE_PATH = "vec_embeddings.pkl"
 llm = GoogleGenerativeAI(model = "gemini-2.0-flash", api_key= api_key)
